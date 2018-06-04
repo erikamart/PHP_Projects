@@ -1,0 +1,4 @@
+Put a similar reg expression in the form processing area of the file where it's checking
+<?php 
+if (!preg_match('/[A-Z](2)(\d(3))?/', $albumId)) : ?>
+<span class= "warning"> Doesn't match regex.</span>

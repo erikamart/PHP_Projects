@@ -1,0 +1,26 @@
+.topBottom {
+    
+    text-align: center;
+}
+
+h2 { 
+    margin-bottom: 0px;
+}
+body {
+    background-color: lightCyan;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    }
+#contentDiv {
+    margin-left: 20px;
+}
+.pad { 
+    margin-left: 20px;
+}
+.tab label { 
+    padding-right: 2em; 
+}
+
+.error {
+    color: red;
+}
