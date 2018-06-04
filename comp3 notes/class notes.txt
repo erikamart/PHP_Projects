@@ -1,3 +1,0 @@
-section 3.1, 3.2, 3.3.  revised Labcomp3-3.php is found below labcomp3-5.php is what to use for comp 3
-
-remember on the $conn line to change "root" to "student" and the blank "" to "Itse1406".
