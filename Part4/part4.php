@@ -31,7 +31,7 @@ if (isset($_POST['startQuiz'])){
 	} // end cookie validation
 } // end startQuiz validation
 
-$pageTitle = "Part I: Trivia Registration";
+$pageTitle = "Part 4, Section I: Trivia Registration Form";
 writeHead($pageTitle);
 ?> <!-- end form submittal check and data processing -->
 
@@ -59,6 +59,6 @@ writeHead($pageTitle);
 
 <!-- footer and html closing tags embedded -->
 <?php
-$pageFoot = "Part I: Trivia Registration";
+$pageFoot = "Part 4, Section I: Trivia Registration Form";
 writeFoot($pageFoot);
 ?>

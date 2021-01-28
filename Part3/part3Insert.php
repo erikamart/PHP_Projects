@@ -9,7 +9,7 @@
         }
 
     // Define the title variable
-    $pageTitle = "Comp3 Insert Form";
+    $pageTitle = "Part 3, Section II: Insert Form";
     // Call writeHead passing the title variable in
     writeHead($pageTitle);
 
@@ -97,7 +97,7 @@
         mysqli_query($conn, $query) or die(mysqli_error($conn));
             if (mysqli_affected_rows($conn)>0) {
                 $trackI = mysqli_insert_id($conn);
-                header("Location: comp3.php?action=added&id=$trackI");
+                header("Location: part3.php?action=added&id=$trackI");
                 exit();
             }
     }
@@ -105,7 +105,7 @@
 ?>
 
 <div id="contentDiv">
-    <form method="post" action="comp3Insert.php">
+    <form method="post" action="part3Insert.php">
         <p>
             <?php echo $errorName;?>
             <?php echo $errorNameReq;?>
@@ -162,7 +162,7 @@
 <!-- footer and html closing tags embedded -->
 <?php
 // Define the foot variable
-$pageFoot = "Competency 3 Part II: Insert Page";
+$pageFoot = "Part 3, Section II: Insert Form";
 //call the writeFoot function to write out the footer information
 writeFoot($pageFoot); 
 ?>

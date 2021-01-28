@@ -9,7 +9,7 @@
         }
 
     // Define the title variable
-    $pageTitle = "Comp3 Update Form";
+    $pageTitle = "Part 3, Section III: Update Form";
     // Call writeHead passing the title variable in
     writeHead($pageTitle);
 
@@ -101,7 +101,7 @@
 //              debugging tools below.  be sure to comment out the page re-directs (104 & 105) to view results
 //				print_r($_POST);
 //				echo "<br>Track I is $trackI<br>";
-                header("Location: comp3.php?action=updated&id=$trackI");
+                header("Location: part3.php?action=updated&id=$trackI");
                 exit();
             }
     }
@@ -109,7 +109,7 @@
     else {
         // if the form was not submitted, get the id from the querystring and retrieve the data from the database
         if (!isset($_GET['id'])) {
-            echo "<p class='error'>No Track ID provided. <a href='comp3.php'>Return to display page.</a>";
+            echo "<p class='error'>No Track ID provided. <a href='part3.php'>Return to display page.</a>";
         }
         $trackI = $_GET['id'];
         $query = "Select * from track where TrackId= $trackI";
@@ -129,13 +129,13 @@
             $bytes = $row['Bytes'];     
             $unitPrice = $row['UnitPrice'];
         } else {
-            echo "<p class='error'>Unable to retrieve Track ID $trackI. <a href='comp3.php'>Return to diplay page.</a>";
+            echo "<p class='error'>Unable to retrieve Track ID $trackI. <a href='part3.php'>Return to diplay page.</a>";
         }
     }
 ?>
 
 <div id="contentDiv">
-    <form method="post" action="comp3Update.php">
+    <form method="post" action="part3Update.php">
         <p>
             <input type="hidden" name="trackI" id="trackI" value="<?php echo $trackI; ?>">
 
@@ -199,7 +199,7 @@
 <!-- footer and html closing tags embedded -->
 <?php
 // Define the foot variable
-$pageFoot = "Competency 3 Part III: Update Page";
+$pageFoot = "Part 3, Section III: Update Form";
 //call the writeFoot function to write out the footer information
 writeFoot($pageFoot); 
 ?>

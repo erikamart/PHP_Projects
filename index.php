@@ -12,10 +12,10 @@
       <h1 class="topBottom">Main Directory of PHP</h1>
     </header>
     <nav class="topBottom">
-      <p><a href="Comp1/comp1.php">Simple Data Lists</a> | 
-         <a href="Comp1/comp1d.php">Do Things with Simple Data Lists</a> | 
-         <a href="Comp2/comp2.php">Forms for a Database</a> | 
-         <a href="Comp3/comp3.php">Playing with a Database</a> | <a href="Comp4/comp4.php">A Trivia Game</a></p>
+      <p><a href="Part1/part1.php">Simple Data Lists</a> | 
+         <a href="Part1/part1d.php">Do Things with Simple Data Lists</a> | 
+         <a href="Part2/part2.php">Forms for a Database</a> | 
+         <a href="Part3/part3.php">Playing with a Database</a> | <a href="Part4/Part4.php">A Trivia Game</a></p>
     <hr>
     </nav>
 

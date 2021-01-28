@@ -1,7 +1,7 @@
 <?php
 require_once '..\functions.php';
 // Define the title variable
-$pageTitle = "Comp2b: User Form";   
+$pageTitle = "Part2b: User Form";   
 // Call writeHead passing the title variable in
 writeHead($pageTitle);
 ?>
@@ -13,7 +13,7 @@ writeHead($pageTitle);
 </p>
 <?php
 // Define the foot variable
-$pageFoot = "Competency 2b";
+$pageFoot = "Part 2b";
 //call the writeFoot function to write out the footer information
 writeFoot($pageFoot);
 ?>

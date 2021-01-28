@@ -15,7 +15,7 @@ if (isset($_COOKIE['coupon'])) {
     // check if quiz has already been done
     // if either is true display a message and redirect to coupon
     echo "<h3>You've already done the quiz!</h3>";
-    echo "<h3><p><a href= 'comp4Coupon.php'>Click here for your coupon</a></p></h3>";
+    echo "<h3><p><a href= 'part4Coupon.php'>Click here for your coupon</a></p></h3>";
 }
 
 // connect to the database************************************************************************************
@@ -86,7 +86,7 @@ if(isset($_POST['submit'])){
                 } //end of game over else
             } // end of 'tries' else
         } elseif ($_SESSION['questNo'] >= 3){
-            echo "<h3><p><a href= 'comp4Coupon.php'>You Win! Click here for your coupon</a></p></h3>";
+            echo "<h3><p><a href= 'part4Coupon.php'>You Win! Click here for your coupon</a></p></h3>";
         }
     } // end of valid for blank field
 } //end of submit POST
@@ -102,11 +102,11 @@ echo "Post: <pre>";
 print_r($_POST);
 echo "</pre>";
 
-echo "<p><a href= 'comp4.php?reset'>Reset Game</a></p>";
+echo "<p><a href= 'part4.php?reset'>Reset Game</a></p>";
 
 
 // HTML header is in functions.php file
-$pageTitle = "Part II: Trivia Questions";
+$pageTitle = "Part 4, Section II: Trivia Questions Form";
 writeHead($pageTitle);
 ?> <!-- end form submittal check and data processing -->
 
@@ -131,6 +131,6 @@ writeHead($pageTitle);
 
 <?php
 // HTML footer is in functions.php file
-$pageFoot = "Part II: Trivia Questions";
+$pageFoot = "Part 4, Section II: Trivia Questions Form";
 writeFoot($pageFoot);
 ?>

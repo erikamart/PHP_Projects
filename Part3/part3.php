@@ -1,10 +1,10 @@
 <?php
     require_once '..\functions.php';
-	$pageTitle = "Comp3: Display Pg";
+	$pageTitle = "Part 3, Section I: Display Page";
     writeHead($pageTitle);
 ?>
         <!-- Include a link to the Insert Page --> 
-		<p class="pad"><a href="comp3Insert.php">Add New Track</a></p>
+		<p class="pad"><a href="part3Insert.php">Add New Track</a></p>
         <hr>
     <div id="contentDiv">
 	<?php
@@ -33,13 +33,13 @@
                         echo "<tr><td>".$row['TrackId']."</td>";
                         echo "<td>".$row['Name']."</td>";
                         echo "<td>".$row['UnitPrice']."</td>";
-                        echo "<td><a href='comp3Update.php?id=".$row['TrackId']."'>Update</a></td>";
-                        echo "<td><a href='comp3Delete.php?id=".$row['TrackId']."'>Delete</a></td></tr>\n";
+                        echo "<td><a href='part3Update.php?id=".$row['TrackId']."'>Update</a></td>";
+                        echo "<td><a href='part3Delete.php?id=".$row['TrackId']."'>Delete</a></td></tr>\n";
                     }
                 }
             ?>
             </table>
 <?php 
-	$pageFoot = "Competency 3 Part I: Display Page";
+	$pageFoot = "Part 3, Section I: Display Page";
 	writeFoot($pageFoot); 
 ?>

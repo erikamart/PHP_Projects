@@ -16,7 +16,7 @@ $err_UploadDouble = NULL;
 $err_UploadInvalid = NULL;
     
 // Define the title variable
-$pageTitle = "Comp2d";
+$pageTitle = "Part2d";
 // Call writeHead passing the title variable in
 writeHead($pageTitle);
 		
@@ -70,7 +70,7 @@ $valid = true;
 
         // if the data is valid, transfer to another page and send data via the querystring
         if ($valid) {
-            header("Location: comp2b.php?albumId=$albumId&artistName=$artistName&albumName=$albumName");
+            header("Location: part2b.php?albumId=$albumId&artistName=$artistName&albumName=$albumName");
             exit();
         }
     }  // end form submittal check and data processing
@@ -78,7 +78,7 @@ $valid = true;
 
 
 <div id="contentDiv">
-    <form method="post" action="comp2d.php">
+    <form method="post" action="part2d.php">
         <p>
             <?php echo $errorAlbumId;?>
 			<?php echo $errorAlbumIdreq;?>
@@ -110,7 +110,7 @@ $valid = true;
 <!-- footer and html closing tags embedded -->
 <?php
 // Define the foot variable
-$pageFoot = "Competency 2 Desired";
+$pageFoot = "Part 2 Desired";
 //call the writeFoot function to write out the footer information
 writeFoot($pageFoot); 
 ?>

@@ -24,7 +24,7 @@ $errorGenre = NULL;
 $errorTracks = NULL;
     
 // Define the title variable
-$pageTitle = "Comp2 User Form";
+$pageTitle = "Part2 User Form";
 // Call writeHead passing the title variable in
 writeHead($pageTitle);
 		
@@ -105,7 +105,7 @@ $valid = true;
         }
         // if the data is valid, transfer to another page and send data via the querystring
         if ($valid) {
-            header("Location: comp2b.php?albumId=$albumId&artistName=$artistName&albumName=$albumName");
+            header("Location: part2b.php?albumId=$albumId&artistName=$artistName&albumName=$albumName");
             exit();
         } // end of valid if
     }  // end form submittal check and data processing
@@ -113,7 +113,7 @@ $valid = true;
 
 
 <div id="contentDiv">
-    <form method="post" action="comp2.php">
+    <form method="post" action="part2.php">
         <p>
             <?php echo $errorAlbumId;?>
 			<?php echo $errorAlbumIdreq;?>
@@ -241,7 +241,7 @@ $valid = true;
 <!-- footer and html closing tags embedded -->
 <?php
 // Define the foot variable
-$pageFoot = "Competency 2";
+$pageFoot = "Part 2";
 //call the writeFoot function to write out the footer information
 writeFoot($pageFoot); 
 ?>
